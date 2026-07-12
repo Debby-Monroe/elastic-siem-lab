@@ -107,8 +107,10 @@ The simulated attack targeted multiple commonly used account names (`admin`, `da
 
 ---
 
+---
+
 ## 📄 Additional Documentation
 
-A detailed incident investigation report is available in:
+For the detailed security investigation report:
 
-**incident-report.md**
+[View Incident Investigation Report](incident-report.md)
