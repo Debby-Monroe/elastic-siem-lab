@@ -31,21 +31,23 @@ Authentication events were collected from the standard Linux authentication log:
 
 
 /var/log/auth.log
+
 To isolate the malicious behavior from routine system noise within the Elastic Discover tab, the following Kibana Query Language (KQL) query was executed:
 Code snippet
 event.category:"authentication" and event.outcome:"failure" and host.name:"ubuntu-lab-target"
+
 The investigation revealed repeated authentication failures targeting multiple administrative and default accounts in rapid succession, confirming automated password-guessing behavior.
-Findings
 
-## Metric	Observation
-
+## Findings
+|-----|-----------|
+Metric	Observation
 Failed Login Attempts	47
 Targeted Accounts	admin, database, guest, support, test
 Attack Duration	43 seconds (~1.1 attempts/second)
 Source IP	127.0.0.1 (Local loopback via simulation script)
 Attack Pattern	Password-guessing / Dictionary attack
 Log Source	Ubuntu auth.log
-
+---
 Analyst Note on Source IP: The source IP appears as 127.0.0.1 because the attack script was executed locally on the host to simulate an insider threat / localized automated attack vector. In a production environment, this would warrant immediate investigation into localized crontabs or compromised local service accounts.
 
 ## Recommendations & Mitigation Strategies
