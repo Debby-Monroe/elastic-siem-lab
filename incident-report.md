@@ -4,7 +4,7 @@
 
 | Field | Value |
 |---------|---------|
-| Case ID | 2026-07-BF |
+| Case ID | 2026-07-10 |
 | Incident Type | Brute-Force Authentication Attack (Simulated) |
 | Severity | Low / Medium |
 | Status | Closed / Resolved |
