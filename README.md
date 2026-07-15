@@ -1,6 +1,6 @@
-# 🚨 Automated Brute-Force Detection & Telemetry Pipeline (Elastic Cloud SIEM)
+#  Automated Brute-Force Detection & Telemetry Pipeline (Elastic Cloud SIEM)
 
-## 🎯 Objective
+##  Objective
 
 This project demonstrates the deployment of an Elastic Cloud SIEM environment to collect and analyze security logs from a Linux endpoint. The objective was to simulate a brute-force password attack, configure centralized log collection using Elastic Agent, and investigate authentication failures using Kibana Query Language (KQL).
 
@@ -18,7 +18,7 @@ The investigation focused on identifying suspicious login activity, analyzing au
 
 ---
 
-## 🏗️ Lab Architecture
+##  Lab Architecture
 
 The environment consisted of an Ubuntu Linux endpoint connected to Elastic Cloud through Elastic Agent. Fleet Management was used to manage endpoint enrollment and telemetry collection. Authentication logs were forwarded to Kibana for monitoring and investigation.
 
@@ -70,7 +70,7 @@ event.outcome:"failure"
 
 ---
 
-## 📊 Findings
+## Findings
 
 The investigation identified a pattern consistent with an automated password-guessing attack targeting multiple user accounts.
 
@@ -99,7 +99,7 @@ The investigation identified a pattern consistent with an automated password-gue
 
 ---
 
-## 📝 Key Takeaway
+## Key Takeaway
 
 This project provided hands-on experience deploying a cloud-based SIEM, onboarding an endpoint, collecting security telemetry, and investigating authentication failures using KQL.
 
